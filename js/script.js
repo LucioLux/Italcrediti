@@ -1,18 +1,26 @@
-// Close toggle menu when nav-link clicked
-function closeToggle(x) {
-    if (x.matches) {
-        var navLinks = document.querySelectorAll('.nav-item');
-        var menuToggle = document.getElementById('navbarSupportedContent');
-        var bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
-        navLinks.forEach((l) => {
-            l.addEventListener('click', () => { bsCollapse.toggle() })
-        })
+function myFunction(x) {
+if (x.matches) { // If media query matches
+    navLinks.forEach((l) => {
+        l.addEventListener('click', () => { bsCollapse.toggle() })
+    });
     }
-  }
-  
-  const mmObj = window.matchMedia("(max-width: 992px)")
-  
-  closeToggle(mmObj);
-  
-  mmObj.addListener(closeToggle)
-  // End Close toggle menu when nav-link clicked
+}
+
+window.onscroll = function autohide() {
+    var s = window.pageYOffset;
+    if (s < 64 && !x.matches) {
+        n.style.setProperty("background-color", "transparent", "important");
+    } else {
+        n.style.setProperty("background-color", "", "");
+    }
+}
+
+var navLinks = document.querySelectorAll('.nav-item');
+var menuToggle = document.getElementById('navbarSupportedContent');
+var bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
+
+var n = document.getElementById('navbar');
+
+var x = window.matchMedia("(max-width: 992px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
