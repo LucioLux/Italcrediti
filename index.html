@@ -16,7 +16,10 @@
 
   <!-- Swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-  
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- Main CSS -->
   <link rel="stylesheet" href="css/main.min.css">
 
@@ -70,7 +73,7 @@
         <div class="mt-auto pt-4">
           <div class="text-white">
             <p class="lead mb-0">
-              In <span class="text-focus">Italcrediti</span> siamo specializzati in operazioni di saldo e stralcio immobiliare e NPL. 
+              In <span class="text-focus">Ital<span class="opacity-50">crediti</span></span> siamo specializzati in operazioni di saldo e stralcio immobiliare e NPL. 
             </p>
             <p class="lead ">Scegli il nostro team di professionisti.</p>
           </div>
@@ -94,7 +97,7 @@
     <section id="difenditi" class="bg-light py-5 mx-0 d-flex align-items-center">
       <div class="container-fluid p-5">
         <div class="d-flex justify-content-center">
-          <div class="text-center col-md-10">
+          <div class="text-center col-md-10" data-aos="fade-up">
             <ion-icon name="shield-half-sharp" size="large" class="text-primary pb-3"></ion-icon>
             <h2 class="">Difenditi dai debiti</h2>
             <p class="lead pb-3">Vendendo l'immobile a saldo e stralcio i tuoi debiti verranno completamente cancellati.</p>
@@ -112,7 +115,7 @@
       <div class="col-lg-6 h-100">
         <div class="container-fluid px-5 d-flex justify-content-center align-items-center">
           <div class="vantaggi d-flex">
-            <div class="text-center align-self-center">
+            <div class="text-center align-self-center" data-aos="fade-up">
               <ion-icon name="wallet-sharp" size="large" class="text-primary pb-3"></ion-icon>
               <h2>Vantaggi</h2>
               <p class="lead pb-3">Il saldo e stralcio è un'opportunità vantaggiosa per tutte le parti coinvolte nell'operazione.</p>
@@ -126,13 +129,13 @@
         </div>
       </div>
       <div class="col-lg-6 p-0 fill">
-        <img src="https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="parallax" alt="Buildings">
+        <img src="img/pexels-sevenstorm-juhaszimrus-443383.jpg" class="parallax" alt="Buildings">
       </div>
     </section><!-- /Vantaggi -->
 
     <!-- Metodo -->
     <section id="metodo" class="bg-light d-flex align-items-center">
-      <div class="container-fluid">
+      <div class="container-fluid" data-aos="fade-up">
         <div  class="bg-light overflow-hidden pt-5">
           <div class="container-fluid p-5">
             <div class="row d-flex justify-content-center">
@@ -144,7 +147,7 @@
             </div>
           </div><!-- End Title -->
     
-          <div class="container-fluid" data-aos="fade-up">
+          <div class="container-fluid" >
             <div class="swiper-container container">
               <div class="swiper-wrapper pb-5 d-flex flex-row align-items-stretch">
     
@@ -255,7 +258,6 @@
         </div>
 
       </div>
-
     </section>
     <!-- /Medoto  -->
 
@@ -264,7 +266,7 @@
       <div class="col-lg-6 h-100">
         <div class="container-fluid px-5 d-flex justify-content-center align-items-center">
           <div class="chisiamo d-flex">
-            <div class="text-center align-self-center">
+            <div class="text-center align-self-center" data-aos="fade-up">
               <ion-icon name="prism-sharp" size="large" class="text-primary pb-3"></ion-icon>
               <h2 class="pb-3">Chi siamo</h2>
               <p class="lead">Un team di esperti che offre servizi di <span class="text-focus">consulenza</span> nel settore degli <span class="text-focus">investimenti immobiliari.</span></p>
@@ -274,7 +276,7 @@
         </div>
       </div>
       <div class="col-lg-6 p-0 fill">
-        <img src="https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="parallax" alt="Buildings">
+        <img src="img/pexels-sevenstorm-juhaszimrus-439391.jpg" class="parallax" alt="Buildings">
       </div>
     </section><!-- /Chi siamo -->
 
@@ -286,7 +288,7 @@
     
     <img src="img/pittogramma-taglio-bianco@2x.png" alt="Logo Italcrediti" width="512px" style="max-width: 100%;" class="position-absolute top-0 start-0">
 
-    <section class="text-white mb-auto mt-auto">
+    <section class="text-white mb-auto mt-auto" data-aos="fade-up">
       <div class="container p-5 mt-5">
         <div class="mt-5 d-lg-flex justify-content-center">
           <div class="col-lg-3">
@@ -328,8 +330,8 @@
 
     <section class="mt-auto">
       <div class="container text-center text-white">
-        <p class="text-focus lead mb-0">Ital<span class="opacity-50">crediti</span></p>
-        <p class="">Specializzati in operazioni di saldo e stralcio immobiliare e NPL.</p>
+        <img id="logo" src="img/logo/italcrediti-logo-verticale-negativo-RGB.svg" alt="Logo Italcrediti" height="40" class="d-inline-block align-text-top">
+        <p class="pt-3">Specializzati in operazioni di saldo e stralcio immobiliare e NPL.</p>
         <div class="d-flex flex-column flex-lg-row justify-content-evenly pt-3">
           <div class="col-lg-4">
             <small>Sede Legale: Via Lorem Ipsum, 15 - 00000 Milano - Italia</small>
@@ -364,6 +366,9 @@
 
   <!-- Simple Parallax -->
   <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   
   <script>
     var image = document.getElementsByClassName('parallax');
@@ -418,6 +423,10 @@
     
       }
     });
+  </script>
+
+  <script>
+    AOS.init();
   </script>
 
 </body>
