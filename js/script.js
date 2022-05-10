@@ -3,6 +3,8 @@ if (x.matches) { // If media query matches
     navLinks.forEach((l) => {
         l.addEventListener('click', () => { bsCollapse.toggle() })
     });
+    } else {
+        n.style.setProperty("background-color", "transparent", "important");
     }
 }
 
